@@ -150,48 +150,50 @@
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <h2 class="title is-3">The superiority of REST.</h2>
+    
+    <h2 class="title is-3 has-text-centered">The superiority of REST</h2>
     
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
+        
        <div class="item">
-         <h2 class="subtitle has-text-centered">
+         <h2 class="subtitle">
           Per-class result comparison on the Five-Billion-Pixels dataset and SkySense + UPerNet is chosen as the baseline.
         </h2>
         <!-- Your image here -->
-        <img src="fig/fbp_swin+rest.png" alt="MY ALT TEXT"/>
+        <img src="fig/fbp_swin+rest.png" alt="Per-class result comparison on the Five-Billion-Pixels dataset"/>
       </div>
         
       <div class="item">
-        <!-- Your image here -->
-        <img src="fig/water_acc+time.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
+          <h2 class="subtitle">
           Comparison of performance (IoU) and efficiency (inference time) across different methods on the GLH-Water dataset.
         </h2>
+        <!-- Your image here -->
+        <img src="fig/water_acc+time.png" alt="Comparison of performance (IoU) and efficiency (inference time)"/>
       </div>
         
       <div class="item">
-        <!-- Your image here -->
-        <img src="fig/fbp_all+rest.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
+        <h2 class="subtitle">
          Performance of REST with different baselines (i.e., encoders and decoders) on the Five-Billion-Pixels dataset.
        </h2>
+        <!-- Your image here -->
+        <img src="fig/fbp_all+rest.png" alt="Performance of REST with different baselines"/>
      </div>
         
      <div class="item">
-      <!-- Your image here -->
-      <img src="fig/fbp_curve.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
+       <h2 class="subtitle">
         Performance of REST on the Five-Billion-Pixels dataset with different image sizes, and the baseline is SkySense + UPerNet.
       </h2>
+      <!-- Your image here -->
+      <img src="fig/fbp_curve.png" alt="Performance of REST on the Five-Billion-Pixels dataset with different image sizes"/>
     </div>
 
     <div class="item">
-      <!-- Your image here -->
-      <img src="fig/supfig_sizevspfm.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle">
         REST further improves the strong capabilities of various remote sensing foundation models on the Five-Billion-Pixels dataset. RSFMs can only handle cropped image tiles with a size of 2048×2048. Integrating our REST, RSFMs can handle whole-scene remote sensing imagery with evidently improved performance and slightly increased model parameters. SkySense (Swin-Huge) requires 16 NVIDIA A100 GPUs for the holistic segmentation, while 4 NVIDIA A100 GPUs are enough for the others.
       </h2>
+      <!-- Your image here -->
+      <img src="fig/supfig_sizevspfm.png" alt="REST is compatible with remote sensing foundation models"/>
     </div>
         
   </div>
@@ -205,32 +207,34 @@
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <!-- Explainability analysis of REST. -->
+
+    <h2 class="title is-3 has-text-centered">Explainability analysis of REST</h2>
+    
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
               
       <div class="item">
-        <!-- Your image here -->
-        <img src="fig/fig3_vis_fbp_attn.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
+        <h2 class="subtitle">
           Visualization of feature maps on Five-Billion-Pixels dataset. Enhanced with REST, the model can exploit the features of the entire spatial region in the WRI. SkySense with UPerNet is chosen as the baseline.
         </h2>
+        <!-- Your image here -->
+        <img src="fig/fig3_vis_fbp_attn.png" alt="Visualization of feature maps on Five-Billion-Pixels dataset"/>
       </div>
         
       <div class="item">
-        <!-- Your image here -->
-        <img src="fig/exfig4_vis_fbp_tsne.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
+        <h2 class="subtitle">
          Visualization of t-SNE results on Five-Billion-Pixels dataset. SkySense with UPerNet is chosen as the baseline. When combined with REST, the features exhibit more distinct classification boundaries, demonstrating the strong feature representation ability brought by REST.
        </h2>
+        <!-- Your image here -->
+        <img src="fig/exfig4_vis_fbp_tsne.png" alt="Visualization of t-SNE results on Five-Billion-Pixels dataset"/>
      </div>
         
      <div class="item">
-      <!-- Your image here -->
-      <img src="fig/exfig5_conf_mat.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
+       <h2 class="subtitle">
         The confusion matrices of results on the Five-Billion-Pixels dataset. a, the confusion matrix of the baseline. b, the confusion matrix of baseline + our REST. SkySense with UPerNet is chosen as the baseline. After the introduction of REST, the accuracy performance across various categories improves, and the confusion between fine-grained categories decreases.
       </h2>
+      <!-- Your image here -->
+      <img src="fig/exfig5_conf_mat.png" alt="The confusion matrices of results on the Five-Billion-Pixels dataset"/>
     </div>
         
   </div>
@@ -244,68 +248,69 @@
   
 <!-- Image carousel -->
 <section class="hero is-small">
-  <!-- Visualization of experimental results. -->
+
+  <h2 class="title is-3 has-text-centered">Visualization of experimental results</h2>
+  
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
-        <img src="fig/fig2_vis_fbp.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
+         <h2 class="subtitle">
           Visualization of segmentation results on Five-Billion-Pixels dataset. REST successfully distinguishes between fine-grained categories (e.g., river, lake, pond), while the results of other competing methods mostly show confusion.
         </h2>
-      </div>
-      <div class="item">
         <!-- Your image here -->
-        <img src="fig/exfig1_vis_water.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
+        <img src="fig/fig2_vis_fbp.png" alt="Visualization of segmentation results on Five-Billion-Pixels dataset"/>
+      </div>
+        
+      <div class="item">
+        <h2 class="subtitle">
           Visualization of segmentation results on GLH-Water dataset. REST accurately extracts the complete water body, while the competing methods present omission errors in different locations. 
         </h2>
-      </div>
-      <div class="item">
         <!-- Your image here -->
-        <img src="fig/exfig3_vis_uavid.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
+        <img src="fig/exfig1_vis_water.png" alt="Visualization of segmentation results on GLH-Water dataset"/>
+      </div>
+        
+      <div class="item">
+        <h2 class="subtitle">
          Visualization of segmentation results on UAVid dataset. Compared with other methods, REST precisely identifies the vehicle in the image as a moving car instead of a static car, completely extracts the road, and significantly reduces misclassification problems.
        </h2>
+        <!-- Your image here -->
+        <img src="fig/exfig3_vis_uavid.png" alt="Visualization of segmentation results on UAVid dataset"/>
      </div>
+        
      <div class="item">
-      <!-- Your image here -->
-      <img src="fig/exfig2_vis_whuohs.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle">
         Visualization of segmentation results on WHU-OHS dataset. REST demonstrates better segmentation results than the competing methods even on the challenging hyperspectral imagery datasets.
       </h2>
+      <!-- Your image here -->
+      <img src="fig/exfig2_vis_whuohs.png" alt="Visualization of segmentation results on WHU-OHS dataset."/>
+    </div>
+        
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+  
+<!-- Single image -->
+<section class="hero is-small">
+
+  <h2 class="title is-3 has-text-centered">REST shows potential on large-size medical imagery segmentation</h2>
+  
+  <div class="hero-body">
+    <div class="container">
+      <div class="item">
+        <h2 class="subtitle">
+          Visualization of preliminary results on the ISIC dataset, a medical image dataset for skin lesion analysis. Using REST significantly enhances the extraction effectiveness of the lesion areas.
+        </h2>
+        <!-- Your image here -->
+        <img src="fig/supfig_vis_isic.png" alt="Visualization of preliminary results on the ISIC dataset"/>
+      </div>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
-
-
-
-
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <!-- REST shows promising results on large-size medical imagery segmentation. -->
-  <div class="hero-body">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="fig/supfig_vis_isic.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Visualization of preliminary results on the ISIC dataset, a medical image dataset for skin lesion analysis. Using REST significantly enhances the extraction effectiveness of the lesion areas.        </h2>       
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
+<!-- End Single image -->
 
 
 
