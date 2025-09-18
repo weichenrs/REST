@@ -79,17 +79,21 @@
 
                   <div class="is-size-5 publication-authors">
                       <span class="author-block"><sup>1</sup>Wuhan University,</span>
-                      <span class="author-block"><sup>2</sup>University of Trento</span>
-                      <span class="author-block"><sup>3</sup>Cornell University</span>
+                      <span class="author-block"><sup>2</sup>University of Trento,</span>
+                      <span class="author-block"><sup>3</sup>Cornell University,</span>
                                       
                 <br>
                 
-                      <span class="author-block"><sup>4</sup>South China University of Technology</span>
+                      <span class="author-block"><sup>4</sup>South China University of Technology,</span>
                       <span class="author-block"><sup>5</sup>Purdue University
-                        
-                        <br><br> IEEE TPAMI 2025</span>
-
+                  </span>
                   </div>
+
+                <br>
+
+              <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup></sup>IEEE TPAMI 2025</span>
+              </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -159,7 +163,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Semantic segmentation of remote sensing imagery (RSI) is a fundamental task that aims at assigning a category label to each pixel. To pursue precise segmentation with one or more fine-grained categories, semantic segmentation often requires holistic segmentation of whole-scene RSI (WRI), which is normally characterized by a large size. However, conventional deep learning methods struggle to handle holistic segmentation of WRI due to the memory limitations of the graphics processing unit (GPU), thus requiring to adopt suboptimal strategies such as cropping or fusion, which result in performance degradation. Here, we introduce the Robust End-to-end semantic Segmentation architecture for whole-scene remoTe sensing imagery (REST). REST is the first intrinsically end-to-end framework for truly holistic segmentation of WRI, supporting a wide range of encoders and decoders in a plug-and-play fashion. It enables seamless integration with mainstream semantic segmentation methods, and even more advanced foundation models. Specifically, we propose a novel spatial parallel interaction mechanism (SPIM) within REST to overcome GPU memory constraints and achieve global context awareness. Unlike traditional parallel methods, SPIM enables REST to process a WRI effectively and efficiently by combining parallel computation with a divide-and-conquer strategy. Both theoretical analysis and experiments demonstrate that REST attains near-linear throughput scalability as additional GPUs are employed. Extensive experiments demonstrate that REST consistently outperforms existing cropping-based and fusion-based methods across a variety of scenarios, ranging from single-class to multi-class segmentation, from multispectral to hyperspectral imagery, and from satellite to drone platforms. The robustness and versatility of REST are expected to offer a promising solution for the holistic segmentation of WRI, with the potential for further extension to large-size medical imagery segmentation. The source code will be released at https://weichenrs.github.io/REST.
+            Semantic segmentation of remote sensing imagery (RSI) is a fundamental task that aims at assigning a category label to each pixel. To pursue precise segmentation with one or more fine-grained categories, semantic segmentation often requires holistic segmentation of whole-scene RSI (WRI), which is normally characterized by a large size. However, conventional deep learning methods struggle to handle holistic segmentation of WRI due to the memory limitations of the graphics processing unit (GPU), thus requiring to adopt suboptimal strategies such as cropping or fusion, which result in performance degradation. Here, we introduce the Robust End-to-end semantic Segmentation architecture for whole-scene remoTe sensing imagery (REST). REST is the first intrinsically end-to-end framework for truly holistic segmentation of WRI, supporting a wide range of encoders and decoders in a plug-and-play fashion. It enables seamless integration with mainstream semantic segmentation methods, and even more advanced foundation models. Specifically, we propose a novel spatial parallel interaction mechanism (SPIM) within REST to overcome GPU memory constraints and achieve global context awareness. Unlike traditional parallel methods, SPIM enables REST to process a WRI effectively and efficiently by combining parallel computation with a divide-and-conquer strategy. Both theoretical analysis and experiments demonstrate that REST attains near-linear throughput scalability as additional GPUs are employed. Extensive experiments demonstrate that REST consistently outperforms existing cropping-based and fusion-based methods across a variety of scenarios, ranging from single-class to multi-class segmentation, from multispectral to hyperspectral imagery, and from satellite to drone platforms. The robustness and versatility of REST are expected to offer a promising solution for the holistic segmentation of WRI, with the potential for further extension to large-size medical imagery segmentation.
           </p>
         </div>
       </div>
@@ -281,7 +285,7 @@
           Visualization of segmentation results on Five-Billion-Pixels dataset. REST successfully distinguishes between fine-grained categories (e.g., river, lake, pond), while the results of other competing methods mostly show confusion.
         </h2>
         <!-- Your image here -->
-        <img src="fig/fig2_vis_fbp2.png" alt="Visualization of segmentation results on Five-Billion-Pixels dataset"/>
+        <img src="fig/fig3_vis_fbp.png" alt="Visualization of segmentation results on Five-Billion-Pixels dataset"/>
       </div>
         
       <div class="item">
@@ -289,7 +293,7 @@
           Visualization of segmentation results on GLH-Water dataset. REST accurately extracts the complete water body, while the competing methods present omission errors in different locations. 
         </h2>
         <!-- Your image here -->
-        <img src="fig/exfig1_vis_water.png" alt="Visualization of segmentation results on GLH-Water dataset"/>
+        <img src="fig/fig2_vis_water.png" alt="Visualization of segmentation results on GLH-Water dataset"/>
       </div>
         
       <div class="item">
@@ -297,7 +301,7 @@
          Visualization of segmentation results on UAVid dataset. Compared with other methods, REST precisely identifies the vehicle in the image as a moving car instead of a static car, completely extracts the road, and significantly reduces misclassification problems.
        </h2>
         <!-- Your image here -->
-        <img src="fig/exfig3_vis_uavid.png" alt="Visualization of segmentation results on UAVid dataset"/>
+        <img src="fig/fig5_vis_uavid.png" alt="Visualization of segmentation results on UAVid dataset"/>
      </div>
         
      <div class="item">
@@ -305,7 +309,7 @@
         Visualization of segmentation results on WHU-OHS dataset. REST demonstrates better segmentation results than the competing methods even on the challenging hyperspectral imagery datasets.
       </h2>
       <!-- Your image here -->
-      <img src="fig/exfig2_vis_whuohs.png" alt="Visualization of segmentation results on WHU-OHS dataset."/>
+      <img src="fig/fig4_vis_whuohs.png" alt="Visualization of segmentation results on WHU-OHS dataset."/>
     </div>
         
   </div>
@@ -340,7 +344,18 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Is Coming Soon！</code></pre>
+      <pre><code>
+        @article{rest2025,
+        title={REST: Holistic Learning for End-to-End Semantic Segmentation of Whole-Scene Remote Sensing Imagery},
+        author={Chen, Wei and Bruzzone, Lorenzo and Dang, Bo and Gao, Yuan and Deng, Youming and Yu, Jin-Gang and Yuan, Liangqi and Li, Yansheng},
+        journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+        year={2025},
+        volume={},
+        number={},
+        pages={1-18},
+        publisher={IEEE},
+        doi={10.1109/TPAMI.2025.3609767}}
+    </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
