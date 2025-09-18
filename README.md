@@ -7,7 +7,7 @@
 
 ## 🏠 Overview
 
-See (https://github.com/weichenrs/REST_code) for details.
+See https://github.com/weichenrs/REST_code for details.
 
 ## 📄 Citation
 
@@ -32,20 +32,6 @@ If you find REST useful in your research, please consider citing:
 - **Author**: [Wei Chen](mailto:weichenrs@whu.edu.cn)
 - **Institution**: Wuhan University
 - **Project Page**: [https://weichenrs.github.io/REST/](https://weichenrs.github.io/REST/)
-
-## 🙏 Acknowledgements
-
-This work is built upon several excellent open-source projects:
-- [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) - Comprehensive segmentation toolbox
-- [SkySense](https://github.com/Jack-bo1220/SkySense) - Powerful remote sensing foundation model SkySense
-- [VMamba](https://github.com/MzeroMiko/VMamba) - VMamba implementation
-
-We thank the remote sensing community for providing high-quality datasets and the authors of foundation models for enabling our plug-and-play architecture design.
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
 <div align="center">
